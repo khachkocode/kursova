@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Parking App | by Sergiy Khachko</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./src/css/styles.css" />
+	</head>
+	<body>
+		<div id="root">
+			<div id="header">
+				<ul>
+					<li id="parking-nav">PARKING</li>
+					<li id="find-nav">FIND</li>
+					<li id="pay-nav">PAY</li>
+				</ul>
+
+				<div class="notification">
+					<div class="bellBtn">
+						<img
+							src="./src/images/icons/notification.svg"
+							width="30px"
+							height="30px"
+							alt="bell"
+							id="bell"
+						/>
+
+						<div class="haveNotification"></div>
+					</div>
+
+					<div class="modal">
+						<div class="listOfNotification">
+							<div class="message">
+								<p>YOUR CAR IS PARKING NOW!</p>
+								<button>X</button>
+							</div>
+							<div class="message">
+								<p>YOUR CAR IS PARKING NOW!</p>
+								<button>X</button>
+							</div>
+							<div class="message">
+								<p>YOUR CAR IS PARKING NOW!</p>
+								<button>X</button>
+							</div>
+						</div>
+
+						<button class="clearNotification">CLEAR ALL MESSAGE</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="wrapper">
+				<div class="parking">
+					<div class="row">
+						<div class="column">
+							<div class="place">
+								<h1>A01</h1>
+							</div>
+							<div class="place">
+								<h1>A02</h1>
+							</div>
+							<div class="place">
+								<h1>A03</h1>
+							</div>
+							<div class="place">
+								<h1>A04</h1>
+							</div>
+							<div class="place">
+								<h1>A05</h1>
+							</div>
+							<div class="place">
+								<h1>A08</h1>
+							</div>
+							<div class="place">
+								<h1>A09</h1>
+							</div>
+							<div class="place">
+								<h1>A10</h1>
+							</div>
+						</div>
+						<div class="column">
+							<div class="place">
+								<h1>A06</h1>
+							</div>
+							<div class="place">
+								<h1>A11</h1>
+							</div>
+							<div class="place">
+								<h1>A12</h1>
+							</div>
+							<div class="place">
+								<h1>A13</h1>
+							</div>
+							<div class="place">
+								<h1>A07</h1>
+							</div>
+							<div class="place">
+								<h1>A14</h1>
+							</div>
+							<div class="place">
+								<h1>A15</h1>
+							</div>
+							<div class="place">
+								<h1>A16</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="place">
+								<h1>B01</h1>
+							</div>
+							<div class="place">
+								<h1>B02</h1>
+							</div>
+							<div class="place">
+								<h1>B03</h1>
+							</div>
+							<div class="place">
+								<h1>B04</h1>
+							</div>
+							<div class="place">
+								<h1>B05</h1>
+							</div>
+							<div class="place">
+								<h1>B06</h1>
+							</div>
+							<div class="place">
+								<h1>B07</h1>
+							</div>
+							<div class="place">
+								<h1>B08</h1>
+							</div>
+						</div>
+						<div class="column">
+							<div class="place">
+								<h1>B09</h1>
+							</div>
+							<div class="place">
+								<h1>B10</h1>
+							</div>
+							<div class="place">
+								<h1>B11</h1>
+							</div>
+							<div class="place">
+								<h1>B12</h1>
+							</div>
+							<div class="place">
+								<h1>B13</h1>
+							</div>
+							<div class="place">
+								<h1>B14</h1>
+							</div>
+							<div class="place">
+								<h1>B15</h1>
+							</div>
+							<div class="place">
+								<h1>B16</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<div class="place">
+								<h1>C01</h1>
+							</div>
+							<div class="place">
+								<h1>C02</h1>
+							</div>
+							<div class="place">
+								<h1>C03</h1>
+							</div>
+							<div class="place">
+								<h1>C04</h1>
+							</div>
+							<div class="place">
+								<h1>C05</h1>
+							</div>
+							<div class="place">
+								<h1>C06</h1>
+							</div>
+							<div class="place">
+								<h1>C07</h1>
+							</div>
+							<div class="place">
+								<h1>C08</h1>
+							</div>
+						</div>
+						<div class="column">
+							<div class="place">
+								<h1>C09</h1>
+							</div>
+							<div class="place">
+								<h1>C10</h1>
+							</div>
+							<div class="place">
+								<h1>C11</h1>
+							</div>
+							<div class="place">
+								<h1>C12</h1>
+							</div>
+							<div class="place">
+								<h1>C13</h1>
+							</div>
+							<div class="place">
+								<h1>C14</h1>
+							</div>
+							<div class="place">
+								<h1>C15</h1>
+							</div>
+							<div class="place">
+								<h1>C16</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./src/js/data.js"></script>
+		<script src="./src/js/view.js"></script>
+		<script src="./src/js/parking.js"></script>
+		<script src="./src/js/find.js"></script>
+		<script src="./src/js/pay.js"></script>
+		<script src="./src/js/index.js"></script>
+	</body>
+</html>
