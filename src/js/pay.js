@@ -29,8 +29,6 @@ class Pay {
 
 				<h1>У вас немає жодного припаркованого транспорту!</h1>
 				<p>Щоб припаркувати свій транспортний засіб, вам потрібно перейти на сторінку "FIND".</p>
-
-				<button>ПРИПАРКУВАТИ ТРАНСПОРТ</button>
 			</div>
 			`;
 		} else {
@@ -52,28 +50,28 @@ class Pay {
 				const ticketDiv = document.createElement('div');
 				ticketDiv.setAttribute('class', 'ticket');
 				ticketDiv.innerHTML = `<div class="logoTicket">
-				<div class="textLogoTicket">
-				<h1>Parking receipt</h1>
-				<p>This ticket is needed to end the parking lot!</p>
-				</div>
-				<img src="./src/images/logo.png" alt="logo" />
+					<div class="textLogoTicket">
+						<h1>Parking receipt</h1>
+						<p>This ticket is needed to end the parking lot!</p>
+					</div>
+					<img src="./src/images/logo.png" alt="logo" />
 				</div>
 				
 				<div class="infoCar">
-				<h1>Info about vehicle:</h1>
-				<div class="listInfoCar">
-				<p>${ticket.slot.car.number}</p>
-				<p>${ticket.slot.car.brand}</p>
-				<p>${ticket.slot.car.model}</p>
-				<p>${ticket.slot.car.year}</p>
-				<p>Slot: ${ticket.slot.name}</p>
-				</div>
+					<h1>Info about vehicle:</h1>
+					<div class="listInfoCar">
+						<p>${ticket.slot.car.number}</p>
+						<p>${ticket.slot.car.brand}</p>
+						<p>${ticket.slot.car.model}</p>
+						<p>${ticket.slot.car.year}</p>
+						<p>Slot: ${ticket.slot.name}</p>
+					</div>
 				</div>
 				
 				
 				<div class="timeParkingTikcet">
-				<p>From: ${ticket.slot.entryTime.getHours()}:${ticket.slot.entryTime.getMinutes()}</p>
-				<p>To: ${exitTime.getHours()}:${exitTime.getMinutes()}</p>
+					<p>From: ${ticket.slot.entryTime.getHours()}:${ticket.slot.entryTime.getMinutes()}</p>
+					<p>To: ${exitTime.getHours()}:${exitTime.getMinutes()}</p>
 				</div>
 				
 				<h1 class='paidTicket'>ДО ОПЛАТИ: ${parking.calculateParkingFee(
@@ -108,5 +106,3 @@ class Pay {
 		}
 	}
 }
-
-const pay = new Pay();

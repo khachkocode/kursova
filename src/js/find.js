@@ -88,7 +88,7 @@ class FindPlace {
 				<input type="text" id="brand-car" placeholder="Марка транспорта" />
 				<input type="text" id="model-car" placeholder="Модель транспорта" />
 				<input type="text" id="year-car" placeholder="Рік транспорта" />
-			</div>
+			</div>	
 
 			<div class="chooseType">
 				<div class="${
@@ -117,17 +117,13 @@ class FindPlace {
 			</div>
 
 			<div class="btnsFind">
-			<button id="findSlotBtn" class="findSlotButton" onclick="handleRegisterCar()">
-				FIND SLOT
-			</button>
-			<button
-				class="findSlotButton"
-				id="goToPayButton"
-				onclick="location.href = 'pay.html'"
-			>
-				GO TO PAYMENT
-			</button>
-		</div>
+				<button id="findSlotBtn" class="findSlotButton" onclick="handleRegisterCar()">
+					FIND SLOT
+				</button>
+				<button class="findSlotButton" id="goToPayButton">
+					GO TO PAYMENT
+				</button>
+			</div>
 		</div>
 
 		<div class="imgCar">

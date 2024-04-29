@@ -3,7 +3,6 @@ class Parking {
 		this.capacity = capacity;
 		this.availableSpaces = capacity;
 		this.parkingList = parkingList;
-		this.bank = 0;
 		this.sortedList = [];
 	}
 
@@ -44,10 +43,8 @@ class Parking {
 				const localTicket = findPlace.createTicket(availableSpace);
 
 				if (!localTicket) return;
-
 				availableSpace.car = car;
 				availableSpace.entryTime = entryTime;
-
 				this.availableSpaces--;
 
 				console.log(
@@ -57,7 +54,6 @@ class Parking {
 				this.sortedList = []
 					.concat(...this.parkingList)
 					.filter(el => el.car !== null);
-
 				return true;
 			} else {
 				console.log(
@@ -67,7 +63,6 @@ class Parking {
 		} else {
 			console.log('Parking is full.');
 		}
-
 		return false;
 	}
 
@@ -104,7 +99,6 @@ class Parking {
 					space.entryTime = null;
 
 					this.availableSpaces++;
-					this.bank += fee;
 
 					this.sortedList = this.sortedList.filter(
 						slot => slot.type !== space.type
@@ -147,9 +141,7 @@ class Parking {
 		const wrapper = document.querySelector('#wrapper');
 		wrapper.innerHTML = '';
 
-		//Parking
 		const divParking = document.createElement('div');
-
 		divParking.setAttribute('class', 'parking');
 		wrapper.appendChild(divParking);
 

@@ -14,7 +14,6 @@ const handleRegisterCar = () => {
 	}
 };
 
-//Event for render page (parking, find, pay)
 document.querySelector('#parking-nav').onclick = () => parking.render();
 document.querySelector('#find-nav').onclick = () => findPlace.render();
 document.querySelector('#pay-nav').onclick = () => paying.render();
